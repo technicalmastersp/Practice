@@ -1,5 +1,43 @@
-.div{
-    height: 100px;
-    width: 100px;
-    background-color: red;
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 5px 15px 5px 5px;
+    padding: 5px;
+    border: 1px rgb(255, 255, 255) solid;
+    min-width: 200px;
+}
+
+input[type='text']::placeholder{
+    color: black;
+    font-weight: 600;
+}
+
+.name{
+    flex: 1 0 140px;
+    background-color: rgb(255, 251, 251);
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+.email{
+    flex: 1 0 120px;
+    background-color: rgb(255, 251, 251);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button{
+    flex: 1 0 60px;
+    background-color: rgb(211, 38, 38);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
 }
