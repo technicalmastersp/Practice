@@ -2,23 +2,58 @@
     padding: 0;
     margin: 0;
     background-color: black;
+    min-width: 220px;
 }
 
+/* this is for the all login section  */
+.login_section{
+    display: grid;
+    justify-content: center;
+    align-items: center;    
+}
+
+/* this class for image container */
+.image{
+    display: flex;
+    margin: 5px 15px 5px 5px;
+    padding: 5px;
+    max-height: 19vh;
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 700px;
+    /* background-color: aquamarine; */
+}
+
+/* this class for content of image container */
+.image{     
+    justify-content: center;
+    align-items: center;
+    color: chocolate;
+    font-size: clamp(45px, 22vw, 173px);
+    font-weight: 700;
+    letter-spacing: .5mm;
+}
+
+/* for (username, password & submit button) contair  */
 .flex-container{
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin: 5px 15px 5px 5px;
     padding: 5px;
-    border: 1px rgb(255, 255, 255) solid;
+    /* border: 1px rgb(255, 255, 255) solid; */
+    box-sizing: border-box;
     min-width: 200px;
+    max-width: 700px;
 }
 
+/* for placeholder  */
 input[type='text']::placeholder{
     color: black;
     font-weight: 600;
 }
 
+/* for username  */
 .name{
     flex: 1 0 140px;
     background-color: rgb(255, 251, 251);
@@ -27,17 +62,22 @@ input[type='text']::placeholder{
     
 }
 
-.email{
+/* for password  */
+.password{
     flex: 1 0 120px;
     background-color: rgb(255, 251, 251);
     padding: 5px;
     border-radius: 5px;
 }
 
+/* for sumit button  */
 button{
     flex: 1 0 60px;
     background-color: rgb(211, 38, 38);
     padding: 5px;
     border-radius: 5px;
     color: white;
+    font-weight: 600;
+    letter-spacing: 0.03mm;
+    font-size: 14px;
 }
